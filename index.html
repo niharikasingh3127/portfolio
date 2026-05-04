@@ -2,52 +2,112 @@
 <html>
 <head>
   <title>Niharika Portfolio</title>
+
+  <!-- Mobile friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      font-family: Arial;
-      margin: 40px;
-      background-color: #f5f5f5;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: #333;
     }
-    h1 { color: #222; }
-    .box {
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
       background: white;
       padding: 20px;
       margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    a { color: blue; }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Hi, I'm Niharika 👋</h1>
+<div class="container">
 
-<div class="box">
-  <p>
-  Focused on building secure web applications with an emphasis on cybersecurity and cryptography.
-  </p>
-</div>
+  <!-- HERO -->
+  <div class="card">
+    <h1>Hi, I'm Niharika 👋</h1>
+    <p style="text-align:center;">
+      Focused on building secure web applications with an emphasis on cybersecurity and cryptography.
+    </p>
+  </div>
 
-<div class="box">
-  <h2>🚀 Projects</h2>
+  <!-- PROJECTS -->
+  <div class="card">
+    <h2>🚀 Projects</h2>
 
-  <p><b>DEF-CYBER</b><br>
-  Cyber complaint management system<br>
-  <a href="https://github.com/niharikasingh3127/DEF-CYBER">View Project</a></p>
+    <div class="project">
+      <b>DEF-CYBER</b><br>
+      Cyber complaint management system with dashboard and tracking.<br>
+      <a href="https://github.com/niharikasingh3127/DEF-CYBER">View Project</a>
+    </div>
 
-  <p><b>NASA-HACKATHON</b><br>
-  Space emergency alert system<br>
-  <a href="https://github.com/niharikasingh3127/NASA-HACKATHON">View Project</a></p>
-</div>
+    <hr>
 
-<div class="box">
-  <h2>🛠 Skills</h2>
-  <p>JavaScript, HTML, CSS</p>
-</div>
+    <div class="project">
+      <b>NASA-HACKATHON</b><br>
+      Space emergency alert system with SOS communication.<br>
+      <a href="https://github.com/niharikasingh3127/NASA-HACKATHON">View Project</a>
+    </div>
 
-<div class="box">
-  <h2>📫 Contact</h2>
-  <p>Email: your_email@gmail.com</p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <h2>🛠 Skills</h2>
+    <p>JavaScript, HTML, CSS, Node.js, Flask</p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="card">
+    <h2>📫 Contact</h2>
+    <p>Email: your_email@gmail.com</p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>© 2026 Niharika</p>
+  </div>
+
 </div>
 
 </body>
